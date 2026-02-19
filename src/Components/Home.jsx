@@ -1,6 +1,10 @@
 import React from 'react';
 import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import Projects from './Projects';
+import Experience from './Experience';
+import About from './About';
+import Skills from './Skills';
+import Contact from './Contact';
 import { SiMedium } from 'react-icons/si';
 import './Home.css';
 
@@ -24,12 +28,49 @@ const Home = ({ toggleTheme }) => {
                     </div>
                 </div>
 
+                {/* Background Skills Cloud */}
+                <div className="bg-skills-container">
+                    <div className="bg-skill-badge pill">HTML5</div>
+                    <div className="bg-skill-badge rect">JAVASCRIPT</div>
+                    <div className="bg-skill-badge circle">CSS3</div>
+                    <div className="bg-skill-badge pill">REACT</div>
+                    <div className="bg-skill-badge rect">TAILWIND</div>
+                    <div className="bg-skill-badge rect">NEXT.JS</div>
+                    <div className="bg-skill-badge pill">TYPESCRIPT</div>
+                    <div className="bg-skill-badge circle">REDUX</div>
+                    <div className="bg-skill-badge pill">FIREBASE</div>
+                    <div className="bg-skill-badge rect">GIT</div>
+                    <div className="bg-skill-badge pill">AZURE</div>
+                </div>
+
                 {/* Background decorative elements could go here */}
                 <div className="bg-gradient-orb"></div>
             </section>
 
             {/* Projects Section */}
-            <Projects />
+            <div id="projects">
+                <Projects />
+            </div>
+
+            {/* Experience Section */}
+            <div id="experience">
+                <Experience />
+            </div>
+
+            {/* About Section */}
+            <div id="about">
+                <About />
+            </div>
+
+            {/* Skills Section */}
+            <div id="skills">
+                <Skills />
+            </div>
+
+            {/* Contact Section */}
+            <div id="contact">
+                <Contact />
+            </div>
 
         </div>
     );

@@ -12,6 +12,14 @@
   /* Keeping consistent */
   --font-primary: 'Inter', sans-serif;
   --nav-height: 80px;
+  /* New Variables for Component theming */
+  --card-bg: #0a0a0a;
+  --border-color: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.2);
+  --icon-bg: rgba(255, 255, 255, 0.1);
+  --footer-bg: #0f0f0f;
+  --footer-bottom-bg: #0a0a0a;
+  --divider-color: rgba(255, 255, 255, 0.2);
 }
 
 /* We can keep the data-theme logical, but the base design is now Dark */
@@ -21,6 +29,15 @@
   --text-highlight: #000;
   --accent-color: #0077b5;
   /* Blue for light mode */
+
+  /* Light Mode Component Overrides */
+  --card-bg: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --input-border: rgba(0, 0, 0, 0.2);
+  --icon-bg: rgba(0, 0, 0, 0.05);
+  --footer-bg: #e1e4e8;
+  --footer-bottom-bg: #d1d5db;
+  --divider-color: rgba(0, 0, 0, 0.1);
 }
 
 body {

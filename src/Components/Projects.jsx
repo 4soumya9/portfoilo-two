@@ -126,7 +126,7 @@ const Projects = () => {
       <p className="more-projects">
         Additional enterprise-grade projects and detailed experience can be viewed on{" "}
         <a
-          href="https://www.linkedin.com/in/soumyajit-saha-9b4186191"
+          href="https://www.linkedin.com/in/soumyajit-saha-9b4186191/"
           target="_blank"
           rel="noopener noreferrer"
         >

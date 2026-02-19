@@ -1,0 +1,123 @@
+.experience-section {
+    min-height: 100vh;
+    padding: 100px 2rem 4rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: var(--text-highlight);
+    text-align: center;
+}
+
+.dot {
+    color: var(--accent-color);
+}
+
+.highlight-name {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.experience-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.experience-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.experience-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    padding-top: 6px;
+    /* Align with title */
+    text-align: right;
+}
+
+.experience-header {
+    /* For mobile layout flexibility */
+    display: contents;
+}
+
+.experience-role {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-highlight);
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.location {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+
+
+.experience-details {
+    grid-column: 2;
+}
+
+.experience-desc-item {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .experience-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .experience-duration {
+        text-align: left;
+        order: -1;
+        /* Show duration first on mobile */
+    }
+
+    .experience-details {
+        grid-column: 1;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
